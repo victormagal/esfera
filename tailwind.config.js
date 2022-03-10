@@ -9,21 +9,15 @@ module.exports = {
     colors: {
       'dark-blue': '#00293D',
       'baby-blue': '#CFEBFF',
-      'dark-gray': '#011E2C',
-      'soft-blue': '#008AEE',
+      'gray': '#343434',
+      'gold': '#B8924D',
       'white': 'white',
       'red': 'red',
       'baby-red': '#F7A8A8'
     },
     extend: {
-      backgroundImage: {
-        'mail-response': "url('/bg-mail.png')"
-      },
       fontFamily: {
-        'sans': ['Montserrat', ...defaultTheme.fontFamily.sans]
-      },
-      margin: {
-        'mail': '20.9rem'
+        'sans': ['Rubik', ...defaultTheme.fontFamily.sans]
       }
     },
   },

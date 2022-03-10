@@ -4,12 +4,13 @@ export default function ContainerWithBackgroundImage({ uri, children }) {
   return (
     <div className='relative'>
       <Image
-        className='z-0'
-        src={uri}
         alt='Background Image'
+        className='z-0'
         layout='fill'
         objectFit='cover'
         objectPosition='center'
+        quality={100}
+        src={uri}
       />
       <div className='relative z-10'>
         {children}

@@ -10,11 +10,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Container } from '../components/Guide';
 
-export default function Home({ products }) {
+export default function Home() {
   return (
     <>
       <Header />
-      <ContainerWithBackgroundVideo uri='/home.mp4'>
+      {/* <ContainerWithBackgroundVideo uri='/home.mp4'>
         <Container>
           <div className='col-span-6 col-start-4 flex flex-col items-center py-48'>
             <h1 className='font-bold text-5xl text-center text-white'>Invista agora e garanta o seu futuro</h1>
@@ -22,93 +22,197 @@ export default function Home({ products }) {
             <a className="bg-white block font-bold py-6 rounded-full text-center text-2xl text-soft-blue uppercase w-1/2" href='https://cadastro.xpi.com.br/desktop/step/1' target='_blank' rel='noreferrer' title='Abra sua conta'>Abra sua conta</a>
           </div>
         </Container>
-      </ContainerWithBackgroundVideo>
-      <ContainerWithBackgroundImage uri='/bg-about-voga.png'>
-        <Container>
-          <div className='col-span-5 col-start-8 py-32'>
-            <h1 className='font-bold mb-12 text-4xl text-dark-gray'>Prazer, somos a Voga Invest, seu parceiro de investimentos</h1>
-            <p className='mb-6'>
-              Nossa missão é cuidar da melhor maneira do que é importante para você. Fazermos isso com nossa autoridade no mercado financeiro e vasto conhecimento em investimentos.
-            </p>
-            <p className='mb-6'>
-              Somos parceiros da plataforma XP Investimentos e queremos você também como parceiro.
-            </p>
-            <p className='font-bold mb-12'>
-              Podemos ajudar você a chegar nos seus objetivos?
-            </p>
-            <Link href='/about'>
-              <a className="bg-dark-gray block font-bold py-3 rounded-full text-center text-white uppercase w-1/2" title='Conheça a Voga Invest'>Conheça a Voga Invest</a>
-            </Link>
-          </div>
-        </Container>
-      </ContainerWithBackgroundImage>
-      <ContainerWithBackgroundImage uri='/bg-products-home.png'>
-        <Container>
-          <div className='col-span-10 col-start-2 flex flex-col items-stretch py-32'>
-            {products?.map(product => (
-              <Product key={product.id} title={product.title} excerpt={product.excerpt} />
-            ))}
-            <Link href='/advisor'>
-              <a className="bg-soft-blue block font-bold py-3 rounded-full self-center text-center text-xl text-white uppercase w-5/12"  title='Conheça a assessoria da Voga'>Conheça a assessoria da Voga</a>
-            </Link>
-          </div>
-        </Container>
-      </ContainerWithBackgroundImage>
-      <ContainerWithBackgroundImage uri='/bg-profiles-home.png'>
-        <Container>
-          <div className='col-span-6 py-32'>
-            <h1 className='font-bold mb-16 text-4xl'>Solução para<br />todos os perfis</h1>
-            <p className='text-xl mb-4'>
-              A Voga entender que não importa qual o valor do investimento, mas qual a importância que você dá a ele. Investir é planejar um objetivo, um sonho e como sonhos não tem tamanho, na Voga você encontra soluções para todos os perfis. 
-            </p>
-            <p className='text-xl'>
-              Nós acreditamos que a melhor maneira de entregar o resultado que você deseja é alinhando o seu perfil às opções mais coerentes com ele.
-            </p>
-          </div>
-          <div className='col-span-5 col-start-8 py-32'>
-            <div className='bg-dark-blue flex items-center p-8 rounded-3xl'>
-              <Image
-                src="/voga-digital-icon.svg"
-                alt="Voga Digital"
-                width={108}
-                height={118}
-              />
-              <div className='ml-12'>
-                <h1 className='mb-4 text-4xl text-white'>Voga Digital</h1>
-                <p className='text-white'>para quem investe até <b>300 mil</b></p>
-              </div>
+      </ContainerWithBackgroundVideo> */}
+      <ContainerWithBackgroundImage uri='/bg-section-2.png'>
+        <Container newClasses='pt-24 pb-52'>
+          <h1 className='col-span-12 text-5xl text-gray'>O seu escritório dentro de um<br />monumento da cidade</h1>
+          <div className='col-span-12 grid grid-cols-12 gap-8 mt-24'>
+            <div className='bg-white col-span-4 flex items-center justify-center rounded-full'>
+              <p className='text-2xl text-center text-gray px-16'>
+                Nosso modelo de negócio, <span className='font-semibold'>além de entregar um escritório privativo nas áreas de camarote do Estádio Nacional...</span>  
+              </p>  
             </div>
-            <div className='bg-dark-blue flex items-center mt-12 p-8 rounded-3xl'>
-              <Image
-                src="/voga-private-icon.svg"
-                alt="Voga Digital"
-                width={108}
-                height={118}
-              />
-              <div className='ml-12'>
-                <h1 className='mb-4 text-4xl text-white'>Voga Private</h1>
-                <p className='text-white'>para quem está no próximo nível e quer investir acida de <b>300 mil</b></p>
-              </div>
+            <div className='bg-white col-span-4 flex items-center justify-center rounded-full'>
+              <p className='text-2xl text-center text-gray px-16'>
+                E a experiência de administração e <span className='font-semibold'>gestão de ativos imobiliários</span> da TRK imóveis
+              </p>  
+            </div>
+            <div className='bg-white col-span-4 flex items-center justify-center rounded-full'>
+              <p className='text-2xl text-center text-gray px-16 py-32'>
+                Contando ainda, com a expertise do Grupo R2, <span className='font-semibold'>que proporciona todo o suporte necessário na criação de experiências únicas</span> (para você, seus clientes e colaboradores) e a administração de ativos imobiliários da TRK Imóveis.
+              </p>  
             </div>
           </div>
         </Container>
       </ContainerWithBackgroundImage>
-      <OpenAccount />
+      <ContainerWithBackgroundImage uri='/bg-section-4.png'>
+        <Container>
+          <div className='col-span-6 col-end-13 py-96'>
+            <p className='text-4xl text-white'>
+              Temos como vizinhança o <span className='font-semibold'>Mané Mercado Gastrônomico</span>, que atua com 17 operações culinárias ativas de domingo a domingo, com menus assinados por renomados chefs de cozinha da cidade.
+            </p>
+          </div>
+        </Container>
+      </ContainerWithBackgroundImage>
+      <ContainerWithBackgroundImage uri='/bg-section-5.png'>
+        <Container>
+          <div className='col-span-7 col-end-13 pt-48 pb-96'>
+            <h1 className='text-6xl text-right text-white'>É nisso que acreditamos...</h1>
+            <p className='font-light mt-12 text-4xl text-right text-white'>
+              <span className='font-semibold'>Trabalhar sem sentir que está trabalhando</span> e, por consequência, <span className='font-semibold'>fechar os melhores negócios da sua vida.</span>
+            </p>
+            <p className='font-light mt-8 text-4xl text-right text-white'>
+              Afinal de contas, toda grande decisão também envolve um pouco de emoção, <span className='font-semibold'>e se for pro seu cliente lembrar de você, que seja com as melhores emoções possíveis!</span>
+            </p>
+          </div>
+        </Container>
+      </ContainerWithBackgroundImage>
+      <ContainerWithBackgroundImage uri='/bg-section-6.png'>
+        <Container newClasses='pt-24'>
+          <h1 className='col-span-8 col-start-5 font-bold pl-4 text-5xl text-white uppercase'>Nossos</h1>
+          <h1 className='col-span-7 col-start-6 font-bold text-5xl text-gold uppercase'>Serviços</h1>
+        </Container>
+        <Container newClasses='py-12'>
+          <div className='col-span-2 flex items-center'>
+            <Image
+              alt='Serviço de portaria'
+              height={166}
+              quality={100}
+              src='/service-reception.svg'
+              width={166}
+            />  
+          </div>
+          <div className='col-span-10 flex items-center'>
+            <p className='text-4xl text-white'>
+              Serviço de portaria e recepção com controle de acesso às áreas comuns.
+            </p>
+          </div>
+        </Container>
+        <Container newClasses='py-12'>
+          <div className='col-span-2 flex items-center'>
+            <Image
+              alt='Ponto de acesso'
+              height={166}
+              quality={100}
+              src='/service-wifi.svg'
+              width={166}
+            />  
+          </div>
+          <div className='col-span-10 flex items-center'>
+            <p className='text-4xl text-white'>
+              Ponto de acesso a serviço de internet básico.
+            </p>
+          </div>
+        </Container>
+        <Container newClasses='py-12'>
+          <div className='col-span-2 flex items-center'>
+            <Image
+              alt='Despesas acessórias'
+              height={148}
+              quality={100}
+              src='/service-taxes.svg'
+              width={148}
+            />  
+          </div>
+          <div className='col-span-10 flex items-center'>
+            <p className='text-4xl text-white'>
+              Despesas acessórias do espaço privativo, tais como: IPTU, Energia elétrica, água/esgoto e seguro predial.
+            </p>
+          </div>
+        </Container>
+        <Container newClasses='py-12'>
+          <div className='col-span-2 flex items-center'>
+            <Image
+              alt='Serviço de conservação'
+              height={148}
+              quality={100}
+              src='/service-cleanup.svg'
+              width={148}
+            />  
+          </div>
+          <div className='col-span-10 flex items-center'>
+            <p className='text-4xl text-white'>
+              Serviço de conservação e limpeza das áreas comuns.
+            </p>
+          </div>
+        </Container>
+        <Container newClasses='pt-12 pb-48'>
+          <div className='col-span-2 flex items-center'>
+            <Image
+              alt='Serviço de portaria'
+              height={148}
+              quality={100}
+              src='/service-parking.svg'
+              width={148}
+            />  
+          </div>
+          <div className='col-span-10 flex items-center'>
+            <p className='text-4xl text-white'>
+              Estacionamento privativo.
+            </p>
+          </div>
+        </Container>
+      </ContainerWithBackgroundImage>
+      <ContainerWithBackgroundImage uri='/bg-section-7.png'>
+        <Container newClasses='py-20'>
+          <h1 className='col-span-9 col-start-4 font-bold pl-4 text-5xl text-white uppercase'>Depoimento de</h1>
+          <h1 className='col-span-7 col-start-6 font-bold text-5xl text-gold uppercase'>Clientes ativos</h1>
+        </Container>
+        <Container newClasses='pb-20'>
+          <div className='border border-white col-span-4 flex flex-col items-start px-20 py-12 rounded'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Solaris - Comunicação Multimídia'
+                className='rounded-full'
+                height={280}
+                quality={100}
+                src='/solaris.png'
+                width={280}
+              />
+            </div>
+            <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
+            <p className='font-light mb-6 text-xl text-white'>
+              O ambiente do Esfera nos proporciona um <span className='font-semibold'>atendimento único com experiências e possibilidades de negócios</span> que não encontramos em outros centros empresariais de Brasília.
+            </p>
+            <p className='font-semibold text-xl text-white'>Solaris</p>
+          </div>
+          <div className='border border-white col-span-4 flex flex-col items-start px-20 py-12 rounded'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Lotus'
+                className='rounded-full'
+                height={280}
+                quality={100}
+                src='/lotus.png'
+                width={280}
+              />
+            </div>
+            <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
+            <p className='font-light mb-6 text-xl text-white'>
+              A Esfera passa uma <span className='font-semibold'>experiência incrível aos nossos funcionários e clientes</span>, além de oferecer um atendimento especializado, rápido e muito profissional.
+            </p>
+            <p className='font-semibold text-xl text-white'>Lotus</p>
+          </div>
+          <div className='border border-white col-span-4 flex flex-col items-start px-20 py-12 rounded'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='B2'
+                className='rounded-full'
+                height={280}
+                quality={100}
+                src='/b2.png'
+                width={280}
+              />
+            </div>
+            <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
+            <p className='font-light mb-6 text-xl text-white'>
+              O <span className='font-semibold'>networking e a estrutura</span> foram os principais motivos que nos fizeram trazer o escritório para a Esfera. Todo o projeto apresentado comprova que é um ambiente para negócios muito excepcional!
+            </p>
+            <p className='font-semibold text-xl text-white'>B2</p>
+          </div>
+        </Container>
+      </ContainerWithBackgroundImage>
       <Footer />
     </>
   )
-}
-
-export async function getStaticProps(context) {
-  const { data } = await client.query({
-    query: getProducts
-  });
-
-  const products = data?.produtos?.edges.map(({ node }) => node);
-  
-  return {
-    props: {
-      products
-    }
-  }
 }
