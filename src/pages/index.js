@@ -1,13 +1,7 @@
-import client from '../utils/client';
-import { getProducts } from '../utils/queries';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import OpenAccount from '../components/OpenAccount';
 import ContainerWithBackgroundImage from '../components/ContainerWithBackgroundImage';
-import ContainerWithBackgroundVideo from '../components/ContainerWithBackgroundVideo';
-import Product from '../components/Product';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Container } from '../components/Guide';
 import { Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
