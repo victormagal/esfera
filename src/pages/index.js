@@ -9,6 +9,8 @@ import Product from '../components/Product';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Container } from '../components/Guide';
+import { Field, Form, Formik } from 'formik';
+import * as Yup from 'yup';
 
 export default function Home() {
   return (
@@ -205,90 +207,6 @@ export default function Home() {
           </div>
         </div>                    
       </div>
-      {/* <div className='flex overflow-x-scroll'>
-        <div className='flex flex-nowrap'>
-          <div className='border border-gold inline-block mx-6 px-12 py-6 rounded'>
-            <div className='flex justify-center w-full'>
-              <Image
-                alt='Solaris - Comunicação Multimídia'
-                className='rounded-full'
-                height={280}
-                quality={100}
-                src='/comment_1.png'
-                width={280}
-              />
-            </div>
-            <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-            <p className='font-light mb-6 text-xl text-gray'>
-              <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-            </p>
-          </div>
-          <div className='border border-gold inline-block mx-6 px-12 py-6 rounded w-1/4'>
-            <div className='flex justify-center w-full'>
-              <Image
-                alt='Solaris - Comunicação Multimídia'
-                className='rounded-full'
-                height={280}
-                quality={100}
-                src='/comment_1.png'
-                width={280}
-              />
-            </div>
-            <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-            <p className='font-light mb-6 text-xl text-gray'>
-              <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-            </p>
-          </div>
-          <div className='border border-gold inline-block mx-6 px-12 py-6 rounded w-1/4'>
-            <div className='flex justify-center w-full'>
-              <Image
-                alt='Solaris - Comunicação Multimídia'
-                className='rounded-full'
-                height={280}
-                quality={100}
-                src='/comment_1.png'
-                width={280}
-              />
-            </div>
-            <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-            <p className='font-light mb-6 text-xl text-gray'>
-              <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-            </p>
-          </div>
-          <div className='border border-gold inline-block mx-6 px-12 py-6 rounded w-1/4'>
-            <div className='flex justify-center w-full'>
-              <Image
-                alt='Solaris - Comunicação Multimídia'
-                className='rounded-full'
-                height={280}
-                quality={100}
-                src='/comment_1.png'
-                width={280}
-              />
-            </div>
-            <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-            <p className='font-light mb-6 text-xl text-gray'>
-              <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-            </p>
-          </div>
-          <div className='border border-gold inline-block mx-6 px-12 py-6 rounded w-1/4'>
-            <div className='flex justify-center w-full'>
-              <Image
-                alt='Solaris - Comunicação Multimídia'
-                className='rounded-full'
-                height={280}
-                quality={100}
-                src='/comment_1.png'
-                width={280}
-              />
-            </div>
-            <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-            <p className='font-light mb-6 text-xl text-gray'>
-              <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-            </p>
-          </div>
-        </div>
-      </div> */}
       <ContainerWithBackgroundImage uri='/bg-section-4.png'>
         <Container>
           <div className='col-span-6 col-end-13 py-96'>
@@ -453,6 +371,94 @@ export default function Home() {
               O <span className='font-semibold'>networking e a estrutura</span> foram os principais motivos que nos fizeram trazer o escritório para a Esfera. Todo o projeto apresentado comprova que é um ambiente para negócios muito excepcional!
             </p>
             <p className='font-semibold text-xl text-white'>B2</p>
+          </div>
+        </Container>
+      </ContainerWithBackgroundImage>
+      <ContainerWithBackgroundImage uri='/bg-section-8.png'>
+        <Container newClasses='py-20'>
+          <h1 className='col-span-10 col-start-3 font-bold pl-4 text-5xl uppercase'>Vamos criar negócios,</h1>
+          <h1 className='col-span-8 col-start-5 font-bold text-5xl text-soft-gray uppercase'>conexões e experiências?</h1>
+        </Container>
+        <Container>
+          <div className='col-span-12'>
+            <Formik
+              initialValues={{
+                nome: '',
+                telefone: '',
+                email: '',
+                mensagem: ''
+              }}
+              validationSchema={Yup.object({
+                nome: Yup.string().required('Campo obrigatório'),
+                email: Yup.string().email('E-mail inválido').required('Campo obrigatório'),
+                telefone: Yup.string().required('Campo obrigatório'),
+                mensagem: Yup.string().required('Campo obrigatório')
+              })}
+              onSubmit={async values => {
+                fetch('/api/mail', {
+                  method: 'POST',
+                  body: JSON.stringify(values)
+                }).then(res => {
+                  res.status === 200 ? alert('foi') : alert('nao foi');
+                })
+              }}
+            >
+              {({ errors, values }) => (
+                <Form>
+                  <ul className='flex mb-12 '>
+                    <li className='w-full'>
+                      {errors.nome && <p className='mt-2 text-soft-gray'>{errors.nome}</p>}
+                      <Field
+                        className={`${errors.nome ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray p-8 text-2xl text-dark-blue w-full`}
+                        name='nome'
+                        placeholder='NOME COMPLETO:'
+                        type='text'
+                        value={values.nome}
+                      />
+                    </li>
+                  </ul>
+                  <ul className='flex mb-12'>
+                    <li className='mr-6 w-1/2'>
+                      {errors.telefone && <p className='mt-2 text-soft-gray'>{errors.telefone}</p>}
+                      <Field 
+                        className={`${errors.telefone ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray p-8 text-2xl text-dark-blue w-full`} 
+                        name='telefone' 
+                        placeholder='TELEFONE PARA CONTATO:' 
+                        type='text' 
+                        value={values.telefone} 
+                      />
+                    </li>
+                    <li className='ml-6 w-1/2'>
+                      {errors.email && <p className='mt-2 text-soft-gray'>{errors.email}</p>}
+                      <Field 
+                        className={`${errors.email ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray p-8 text-2xl text-dark-blue w-full`} 
+                        name='email' 
+                        placeholder='E-MAIL:' 
+                        type='email' 
+                        value={values.email} 
+                      />
+                    </li>
+                  </ul>
+                  <ul className='flex mb-12'>
+                    <li className='w-full'>
+                      {errors.mensagem && <p className='mt-2 text-soft-gray'>{errors.mensagem}</p>}
+                      <Field 
+                        as='textarea' 
+                        className={`${errors.mensagem ? 'bg-baby-gray' : 'bg-white'} font-medium h-56 placeholder:text-soft-gray p-8 text-2xl text-dark-blue w-full`} 
+                        name='mensagem' 
+                        placeholder='MENSAGEM:' 
+                        value={values.mensagem} 
+                      />
+                    </li>
+                  </ul>
+                  <ul className='flex pb-20'>
+                    <li className='flex justify-center w-full'>
+                      <button className='cursor-pointer bg-gold py-6 rounded-md text-lg text-white uppercase w-1/6' type='submit'>Enviar</button>
+                    </li>
+                  </ul>
+                </Form>
+              )}
+            </Formik>
           </div>
         </Container>
       </ContainerWithBackgroundImage>
