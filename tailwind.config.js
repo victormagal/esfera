@@ -2,8 +2,8 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
-    "./src/pages/**/*.{js, ts, jsx, tsx}",
-    "./src/components/**/*.{js, ts, jsx, tsx}"
+    './src/pages/**/*.{js, ts, jsx, tsx}',
+    './src/components/**/*.{js, ts, jsx, tsx}'
   ],
   theme: {
     colors: {
@@ -18,6 +18,12 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Rubik', ...defaultTheme.fontFamily.sans]
+      },
+      height: {
+        'video': '50rem'
+      },
+      minWidth: {
+        '1/4': '25%'
       }
     },
   },
