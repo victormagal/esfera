@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContainerWithBackgroundImage from '../components/ContainerWithBackgroundImage';
@@ -7,6 +8,10 @@ import { Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
 
 export default function Home() {
+  const [formLoader, setFormLoader] = useState(false);
+  const [failMessage, setFailMessage] = useState(false);
+  const [successMessage, setSuccessMessage] = useState(false);
+
   return (
     <>
       <Header />
@@ -389,11 +394,13 @@ export default function Home() {
                 mensagem: Yup.string().required('Campo obrigatório')
               })}
               onSubmit={async values => {
+                setFormLoader(true);
                 fetch('/api/mail', {
                   method: 'POST',
                   body: JSON.stringify(values)
                 }).then(res => {
-                  res.status === 200 ? alert('foi') : alert('nao foi');
+                  res.status === 200 ? setSuccessMessage(true) : setFailMessage(true);
+                  setFormLoader(false);
                 })
               }}
             >
@@ -445,9 +452,37 @@ export default function Home() {
                       />
                     </li>
                   </ul>
+                  {successMessage &&
+                    <ul className='flex pb-8'>
+                      <li>
+                        <p>Mensagem enviada com sucesso!</p>
+                      </li>
+                    </ul>
+                  }
+                  {failMessage &&
+                    <ul className='flex pb-8'>
+                      <li>
+                        <p>Houve um erro em sua tentativa, tente novamente mais tarde!</p>
+                      </li>
+                    </ul>
+                  }
                   <ul className='flex pb-20'>
                     <li className='flex justify-center w-full'>
-                      <button className='cursor-pointer bg-gold py-6 rounded-md text-lg text-white uppercase lg:w-1/6 w-3/4' type='submit'>Enviar</button>
+                      <button 
+                        className='cursor-pointer bg-gold py-6 flex justify-center items-center rounded-md text-lg text-white uppercase lg:w-1/6 w-3/4'
+                        type='submit'
+                      >
+                        {formLoader &&
+                          <Image
+                            alt='Carregando'
+                            height={50}
+                            quality={100}
+                            src='/loader.svg'
+                            width={50}
+                          />
+                        }
+                        <span>Enviar</span>
+                      </button>
                     </li>
                   </ul>
                 </Form>
