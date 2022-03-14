@@ -15,7 +15,7 @@ export default function Header() {
       </Head>
       <div className='lg:py-4'>
         <Container>
-          <div className='lg:col-span-2 col-span-1 flex items-center'>
+          <div className='lg:col-span-2 col-span-3 flex items-center'>
             <Image
               alt='Esfera - Arena e Negócios'
               height={43}
@@ -24,7 +24,7 @@ export default function Header() {
               width={210}
             />
           </div>
-          <ul className='col-span-3 lg:hidden flex justify-end'>
+          <ul className='col-span-1 lg:hidden flex justify-end'>
             <li>
               <button onClick={() => setMenuOpen(!menuOpen)}>
                 <Image
