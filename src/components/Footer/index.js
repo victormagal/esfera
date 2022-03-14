@@ -7,23 +7,23 @@ export default function Footer() {
     <>
       <div className='py-48'>
         <Container>
-          <ul className='col-span-12 flex items-center justify-between border-b pb-4'>
-            <li>
+          <ul className='lg:col-span-12 col-span-4 flex lg:flex-row flex-col items-center justify-between border-b pb-8'>
+            <li className='lg:mb-0 mb-4'>
               <Link href='/'>
                 <a className='font-bold' title='Quem Somos'>Quem Somos</a>
               </Link>
             </li>
-            <li>
+            <li className='lg:mb-0 mb-4'>
               <Link href='/'>
                 <a className='font-bold' title='Serviços'>Serviços</a>
               </Link>
             </li>
-            <li>
+            <li className='lg:mb-0 mb-4'>
               <Link href='/'>
                 <a className='font-bold' title='Contato'>Contato</a>
               </Link>
             </li>
-            <li>
+            <li className='lg:mb-0 mb-4'>
               <Link href='/'>
                 <a title='Esfera - Arena e Negócios'>  
                   <Image
@@ -36,12 +36,12 @@ export default function Footer() {
                 </a>
               </Link>
             </li>
-            <li>
+            <li className='lg:mb-0 mb-4'>
               <Link href='/'>
                 <a className='font-bold' title='Localização'>Localização</a>
               </Link>
             </li>
-            <li>
+            <li className='lg:mb-0 mb-4'>
               <Link href='/'>
                 <a className='font-bold' title='Política de privacidade'>Política de privacidade</a>
               </Link>
@@ -49,8 +49,8 @@ export default function Footer() {
           </ul>
         </Container>
         <Container newClasses='mt-16'>
-          <div className='lg:col-span-2 lg:col-start-6 flex flex-col'>
-            <ul className='flex items-center justify-between'>
+          <div className='lg:col-span-2 col-span-4 lg:col-start-6 flex flex-col'>
+            <ul className='flex items-center lg:justify-between justify-around'>
               <li>
                 <a href='https://www.instagram.com/esferabsb/' target='_blank' rel='noreferrer' title='Instagram'>
                   <Image
