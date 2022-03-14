@@ -9,7 +9,7 @@ import * as Yup from 'yup';
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <div className='w-full'>
         <iframe className='h-video w-full' src='https://www.youtube.com/embed/eGkSItKt-NM?controls=0' title='YouTube video player' frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
       </div>
