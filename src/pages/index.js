@@ -42,8 +42,8 @@ export default function Home() {
       </ContainerWithBackgroundImage>
       <div className='flex overflow-x-scroll py-32 hide-scroll-bar'>
         <div className='flex flex-nowrap lg:ml-40 md:ml-20 ml-10 '>
-          <div className='inline-block px-3 w-96'>
-            <div className='border border-gold inline-block px-12 py-6 rounded'>
+          <div className='inline-block min-h-96 px-3 w-96'>
+            <div className='border border-gold h-full inline-block px-12 py-6 rounded'>
               <div className='flex justify-center w-full'>
                 <Image
                   alt='Solaris - Comunicação Multimídia'
@@ -60,153 +60,63 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className='inline-block px-3 w-96'>
-            <div className='border border-gold inline-block px-12 py-6 rounded'>
+          <div className='inline-block min-h-96 px-3 w-96'>
+            <div className='border border-gold h-full inline-block px-12 py-6 rounded'>
               <div className='flex justify-center w-full'>
                 <Image
                   alt='Solaris - Comunicação Multimídia'
                   className='rounded-full'
                   height={280}
                   quality={100}
-                  src='/comment_1.png'
+                  src='/comment_2.png'
                   width={280}
                 />
               </div>
               <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
               <p className='font-light mb-6 text-xl text-gray'>
-                <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
+                O <span className='font-semibold'>Estádio Nacional Mané Garrincha</span> é um dos maiores ícones da arquitetura brasileira e por si só, um cartão postal a céu aberto. Aqui, você viverá suas maiores e mais importantes experiências de trabalho e de relacionamento...
               </p>
             </div>
           </div>
-          <div className='inline-block px-3 w-96'>
-            <div className='border border-gold inline-block px-12 py-6 rounded'>
+          <div className='inline-block min-h-96 px-3 w-96'>
+            <div className='border border-gold h-full inline-block px-12 py-6 rounded'>
               <div className='flex justify-center w-full'>
                 <Image
                   alt='Solaris - Comunicação Multimídia'
                   className='rounded-full'
                   height={280}
                   quality={100}
-                  src='/comment_1.png'
+                  src='/comment_3.png'
                   width={280}
                 />
               </div>
               <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
               <p className='font-light mb-6 text-xl text-gray'>
-                <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
+                <span className='font-semibold'>Além disso, você pode assistir a grandes shows e eventos esportivos do seu escritório com uma vista única para arena e com total privacidade.</span>
               </p>
             </div>
           </div>
-          <div className='inline-block px-3 w-96'>
-            <div className='border border-gold inline-block px-12 py-6 rounded'>
+          <div className='inline-block min-h-96 px-3 w-96'>
+            <div className='border border-gold h-full inline-block px-12 py-6 rounded'>
               <div className='flex justify-center w-full'>
                 <Image
                   alt='Solaris - Comunicação Multimídia'
                   className='rounded-full'
                   height={280}
                   quality={100}
-                  src='/comment_1.png'
+                  src='/comment_4.png'
                   width={280}
                 />
               </div>
               <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
               <p className='font-light mb-6 text-xl text-gray'>
-                <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-              </p>
-            </div>
-          </div>
-          <div className='inline-block px-3 w-96'>
-            <div className='border border-gold inline-block px-12 py-6 rounded'>
-              <div className='flex justify-center w-full'>
-                <Image
-                  alt='Solaris - Comunicação Multimídia'
-                  className='rounded-full'
-                  height={280}
-                  quality={100}
-                  src='/comment_1.png'
-                  width={280}
-                />
-              </div>
-              <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-              <p className='font-light mb-6 text-xl text-gray'>
-                <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-              </p>
-            </div>
-          </div>
-          <div className='inline-block px-3 w-96'>
-            <div className='border border-gold inline-block px-12 py-6 rounded'>
-              <div className='flex justify-center w-full'>
-                <Image
-                  alt='Solaris - Comunicação Multimídia'
-                  className='rounded-full'
-                  height={280}
-                  quality={100}
-                  src='/comment_1.png'
-                  width={280}
-                />
-              </div>
-              <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-              <p className='font-light mb-6 text-xl text-gray'>
-                <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-              </p>
-            </div>
-          </div>
-          <div className='inline-block px-3 w-96'>
-            <div className='border border-gold inline-block px-12 py-6 rounded'>
-              <div className='flex justify-center w-full'>
-                <Image
-                  alt='Solaris - Comunicação Multimídia'
-                  className='rounded-full'
-                  height={280}
-                  quality={100}
-                  src='/comment_1.png'
-                  width={280}
-                />
-              </div>
-              <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-              <p className='font-light mb-6 text-xl text-gray'>
-                <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-              </p>
-            </div>
-          </div>
-          <div className='inline-block px-3 w-96'>
-            <div className='border border-gold inline-block px-12 py-6 rounded'>
-              <div className='flex justify-center w-full'>
-                <Image
-                  alt='Solaris - Comunicação Multimídia'
-                  className='rounded-full'
-                  height={280}
-                  quality={100}
-                  src='/comment_1.png'
-                  width={280}
-                />
-              </div>
-              <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-              <p className='font-light mb-6 text-xl text-gray'>
-                <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-              </p>
-            </div>
-          </div>
-          <div className='inline-block px-3 w-96'>
-            <div className='border border-gold inline-block px-12 py-6 rounded'>
-              <div className='flex justify-center w-full'>
-                <Image
-                  alt='Solaris - Comunicação Multimídia'
-                  className='rounded-full'
-                  height={280}
-                  quality={100}
-                  src='/comment_1.png'
-                  width={280}
-                />
-              </div>
-              <div className='bg-gold h-8 mb-4 rounded-full w-8'></div>
-              <p className='font-light mb-6 text-xl text-gray'>
-                <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
+                Iremos te ajudar a realizar todas essas possibilidades com o <span className='font-semibold'>profissionalismo, capacidade de realização</span> e gestão que a sua empresa precisa.
               </p>
             </div>
           </div>
         </div>                    
       </div>
-      <ContainerWithBackgroundImage uri='/bg-section-4.png'>
+      <ContainerWithBackgroundImage uri='/bg-section-4.jpg'>
         <Container>
           <div className='lg:col-span-6 col-span-4 lg:col-end-13 py-96'>
             <p className='text-4xl text-white lg:text-left text-center'>
@@ -338,7 +248,7 @@ export default function Home() {
             <p className='font-semibold text-xl text-white'>Solaris</p>
           </div>
           <div className='border border-white col-span-4 flex flex-col items-start px-20 py-12 rounded'>
-            <div className='flex justify-center w-full'>
+            <div className='flex items justify-center w-full'>
               <Image
                 alt='Lotus'
                 className='rounded-full'
