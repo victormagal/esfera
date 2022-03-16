@@ -49,7 +49,7 @@ export default function Footer() {
           </ul>
         </Container>
         <Container newClasses='mt-16'>
-          <div className='lg:col-span-2 col-span-4 lg:col-start-6 flex flex-col'>
+          <div className='lg:col-span-2 col-span-2 lg:col-start-6 col-start-2 flex flex-col'>
             <ul className='flex items-center lg:justify-between justify-around'>
               <li>
                 <a href='https://www.instagram.com/esferabsb/' target='_blank' rel='noreferrer' title='Instagram'>
@@ -63,34 +63,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href='#this' title='Facebook'>
-                  <Image
-                    alt='Facebook'
-                    height={38}
-                    quality={100}
-                    src='/facebook.svg'
-                    width={38}
-                  />
-                </a>
-              </li>
-              <li>
-                <a href='https://www.youtube.com/channel/UC-QSaUjQOgNz6MdBUSt3rVg' target='_blank' rel='noreferrer' title='WhatsApp'>
+                <a href='https://api.whatsapp.com/send?phone=5561982040066' target='_blank' rel='noreferrer' title='WhatsApp'>
                   <Image
                     alt='WhatsApp'
                     height={38}
                     quality={100}
                     src='/whatsapp.svg'
-                    width={38}
-                  />
-                </a>
-              </li>
-              <li>
-                <a href='#this' title='LinkedIn'>
-                  <Image
-                    alt='LinkedIn'
-                    height={38}
-                    quality={100}
-                    src='/linkedin.svg'
                     width={38}
                   />
                 </a>

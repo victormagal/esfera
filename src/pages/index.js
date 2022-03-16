@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Container } from '../components/Guide';
 import { Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
+import { maskPhoneNumber } from '../utils/masks';
 
 export default function Home() {
   const [formLoader, setFormLoader] = useState(false);
@@ -187,7 +188,7 @@ export default function Home() {
           </div>
           <div className='lg:col-span-10 col-span-4 flex items-center'>
             <p className='text-4xl text-white lg:text-left text-center'>
-              Despesas acessórias do espaço privativo, tais como: IPTU, Energia elétrica, água/esgoto e seguro predial.
+              Despesas acessórias do espaço privativo, tais como: IPTU, energia elétrica e água/esgoto.
             </p>
           </div>
         </Container>
@@ -336,7 +337,7 @@ export default function Home() {
                         name='telefone' 
                         placeholder='TELEFONE PARA CONTATO:' 
                         type='text' 
-                        value={values.telefone} 
+                        value={maskPhoneNumber(values.telefone)} 
                       />
                     </li>
                     <li className='lg:ml-6 lg:w-1/2 w-full'>
