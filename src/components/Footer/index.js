@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <div className='py-48'>
         <Container>
-          <ul className='lg:col-span-12 col-span-4 flex lg:flex-row flex-col items-center justify-between border-b pb-8'>
+          <ul className='lg:col-span-10 col-span-4 lg:col-start-2 flex lg:flex-row flex-col items-center justify-between border-b pb-8'>
             <li className='lg:mb-0 mb-4'>
               <Link href='/'>
                 <a className='font-bold' title='Quem Somos'>Quem Somos</a>
@@ -49,8 +49,8 @@ export default function Footer() {
           </ul>
         </Container>
         <Container newClasses='mt-16'>
-          <div className='lg:col-span-2 col-span-2 lg:col-start-6 col-start-2 flex flex-col'>
-            <ul className='flex items-center lg:justify-between justify-around'>
+          <div className='col-span-2 lg:col-start-6 col-start-2 flex flex-col'>
+            <ul className='flex items-center justify-around'>
               <li>
                 <a href='https://www.instagram.com/esferabsb/' target='_blank' rel='noreferrer' title='Instagram'>
                   <Image
