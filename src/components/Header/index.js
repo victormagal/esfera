@@ -55,9 +55,7 @@ export default function Header() {
                 </Link>
               </li>
               <li  className='border-b px-4 pb-2'>
-                <Link href='/'>
-                  <a className='text-gray' title='Área do Cliente'>Área do Cliente</a>
-                </Link>
+                <a className='text-gray' href='https://docs.google.com/document/d/1b3F29LEdROC-EkqcWVzmnNry0gdsyyZ62Z2OzW5MFvI/edit' rel='noreferrer'  target='_blank' title='Área do Cliente'>Área do Cliente</a>
               </li>
               <li  className='border-b px-4 pb-2'>
                 <Link href='/'>
@@ -85,9 +83,7 @@ export default function Header() {
           </ul>
           <ul className='lg:col-span-3 lg:col-end-13 lg:flex hidden items-center justify-between'>
             <li>
-              <Link href='/'>
-                <a className='text-gray' title='Área do Cliente'>Área do Cliente</a>
-              </Link>
+              <a className='text-gray' href='https://docs.google.com/document/d/1b3F29LEdROC-EkqcWVzmnNry0gdsyyZ62Z2OzW5MFvI/edit' rel='noreferrer'  target='_blank' title='Área do Cliente'>Área do Cliente</a>
             </li>
             <li>
               <Link href='/'>
