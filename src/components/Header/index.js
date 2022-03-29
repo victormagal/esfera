@@ -6,6 +6,13 @@ import { Container } from '../Guide';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const scrollTo = element => {
+    document.getElementById(element).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+  };
 
   return (
     <>
@@ -39,20 +46,14 @@ export default function Header() {
           </ul>
           {menuOpen &&
             <ul className='col-span-4 lg:hidden flex flex-col items-center space-y-3 pb-8'>
-              <li className='border-b px-4 pb-2'>
-                <Link href='/'>
-                  <a className='text-gray' title='Quem Somos'>Quem Somos</a>
-                </Link>
+              <li className='border-b px-4 pb-2' onClick={() => scrollTo('quemsomos')}>
+                <a className='text-gray' href='#this' title='Quem Somos'>Quem Somos</a>
               </li>
-              <li  className='border-b px-4 pb-2'>
-                <Link href='/'>
-                  <a className='text-gray' title='Serviços'>Serviços</a>
-                </Link>
+              <li  className='border-b px-4 pb-2' onClick={() => scrollTo('servicos')}>
+                <a className='text-gray' href='#this' title='Serviços'>Serviços</a>
               </li>
-              <li  className='border-b px-4 pb-2'>
-                <Link href='/'>
-                  <a className='text-gray' title='Contato'>Contato</a>
-                </Link>
+              <li  className='border-b px-4 pb-2' onClick={() => scrollTo('contato')}>
+                <a className='text-gray' href='#this' title='Contato'>Contato</a>
               </li>
               <li  className='border-b px-4 pb-2'>
                 <a className='text-gray' href='https://docs.google.com/document/d/1b3F29LEdROC-EkqcWVzmnNry0gdsyyZ62Z2OzW5MFvI/edit' rel='noreferrer'  target='_blank' title='Área do Cliente'>Área do Cliente</a>
@@ -65,20 +66,14 @@ export default function Header() {
             </ul>
           }
           <ul className='lg:col-span-4 lg:flex hidden items-center justify-between'>
-            <li>
-              <Link href='/'>
-                <a className='text-gray' title='Quem Somos'>Quem Somos</a>
-              </Link>
+            <li onClick={() => scrollTo('quemsomos')}>
+              <a className='text-gray' href='#this' title='Quem Somos'>Quem Somos</a>
             </li>
-            <li>
-              <Link href='/'>
-                <a className='text-gray' title='Serviços'>Serviços</a>
-              </Link>
+            <li onClick={() => scrollTo('servicos')}>
+              <a className='text-gray' href='#this' title='Serviços'>Serviços</a>
             </li>
-            <li>
-              <Link href='/'>
-                <a className='text-gray' title='Contato'>Contato</a>
-              </Link>
+            <li onClick={() => scrollTo('contato')}>
+              <a className='text-gray' href='#this' title='Contato'>Contato</a>
             </li>
           </ul>
           <ul className='lg:col-span-3 lg:col-end-13 lg:flex hidden items-center justify-between'>

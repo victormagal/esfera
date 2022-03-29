@@ -19,32 +19,30 @@ export default function Home() {
       <div className='w-full'>
         <iframe className='h-video w-full' src='https://www.youtube.com/embed/eGkSItKt-NM?controls=0' title='YouTube video player' frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
       </div>
-      <ContainerWithBackgroundImage uri='/bg-section-2.png'>
-        <Container newClasses='pt-24 pb-52'>
-          <h1 className='lg:col-span-10 col-span-4 lg:col-start-3 text-5xl text-gray'>O seu escritório dentro de um<br />monumento da cidade</h1>
-          {/* <div className='lg:col-span-12 col-span-4 grid lg:grid-cols-12 grid-cols-4 gap-8 mt-24'> */}
-          <div className='lg:col-span-12 col-span-4 flex lg:flex-row flex-col lg:justify-center items-center mt-24 lg:space-x-8 lg:space-y-0 space-y-8'>
-            {/* <div className='bg-white lg:col-span-3 col-span-4 flex items-center justify-center rounded-3xl'> */}
-            <div className='bg-white flex h-96 items-center justify-center rounded-3xl w-96'>
-              <p className='text-lg text-center text-gray p-16'>
-                Nosso modelo de negócio, <span className='font-semibold'>além de entregar um escritório privativo nas áreas de camarote do Estádio Nacional...</span>  
-              </p>  
+      <div id='quemsomos'>
+        <ContainerWithBackgroundImage uri='/bg-section-2.png'>
+          <Container newClasses='pt-24 pb-52'>
+            <h1 className='lg:col-span-10 col-span-4 lg:col-start-3 text-5xl text-gray'>O seu escritório dentro de um<br />monumento da cidade</h1>
+            <div className='lg:col-span-12 col-span-4 flex lg:flex-row flex-col lg:justify-center items-center mt-24 lg:space-x-8 lg:space-y-0 space-y-8'>
+              <div className='bg-white flex h-96 items-center justify-center rounded-3xl w-96'>
+                <p className='text-lg text-center text-gray p-16'>
+                  Nosso modelo de negócio, <span className='font-semibold'>além de entregar um escritório privativo nas áreas de camarote do Estádio Nacional...</span>  
+                </p>  
+              </div>
+              <div className='bg-white flex h-96 items-center justify-center rounded-3xl w-96'>
+                <p className='text-lg text-center text-gray p-16'>
+                  E a experiência de administração e <span className='font-semibold'>gestão de ativos imobiliários</span> da TRK imóveis
+                </p>  
+              </div>
+              <div className='bg-white flex h-96 items-center justify-center rounded-3xl w-96'>
+                <p className='text-lg text-center text-gray p-16'>
+                  Contando ainda, com a expertise do Grupo R2, <span className='font-semibold'>que proporciona todo o suporte necessário na criação de experiências únicas</span> (para você, seus clientes e colaboradores) e a administração de ativos imobiliários da TRK Imóveis.
+                </p>  
+              </div>
             </div>
-            {/* <div className='bg-white col-span-4 flex items-center justify-center rounded-3xl'> */}
-            <div className='bg-white flex h-96 items-center justify-center rounded-3xl w-96'>
-              <p className='text-lg text-center text-gray p-16'>
-                E a experiência de administração e <span className='font-semibold'>gestão de ativos imobiliários</span> da TRK imóveis
-              </p>  
-            </div>
-            {/* <div className='bg-white col-span-4 flex items-center justify-center rounded-3xl'> */}
-            <div className='bg-white flex h-96 items-center justify-center rounded-3xl w-96'>
-              <p className='text-lg text-center text-gray p-16'>
-                Contando ainda, com a expertise do Grupo R2, <span className='font-semibold'>que proporciona todo o suporte necessário na criação de experiências únicas</span> (para você, seus clientes e colaboradores) e a administração de ativos imobiliários da TRK Imóveis.
-              </p>  
-            </div>
-          </div>
-        </Container>
-      </ContainerWithBackgroundImage>
+          </Container>
+        </ContainerWithBackgroundImage>
+      </div>
       <div className='flex overflow-x-scroll py-32 hide-scroll-bar'>
         <div className='flex flex-nowrap lg:ml-40 md:ml-20 ml-10 '>
           <div className='inline-block min-h-96 px-3 w-96'>
@@ -143,92 +141,94 @@ export default function Home() {
           </div>
         </Container>
       </ContainerWithBackgroundImage>
-      <ContainerWithBackgroundImage uri='/bg-section-6.png'>
-        <Container newClasses='pt-24 pb-44'>
-          <h1 className='lg:col-span-3 col-span-4 lg:col-start-5 font-bold text-5xl text-white lg:text-left text-center uppercase'>Nossos</h1>
-          <h1 className='lg:col-span-3 col-span-4 lg:col-start-6 font-bold text-5xl text-gold lg:text-left text-center uppercase'>Serviços</h1>
-        </Container>
-        <Container newClasses='py-12'>
-          <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
-            <Image
-              alt='Serviço de portaria'
-              height={103}
-              quality={100}
-              src='/service-reception.svg'
-              width={103}
-            />  
-          </div>
-          <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
-            <p className='text-3xl text-white w-full'>
-              Serviço de portaria e recepção com controle de acesso às áreas comuns.
-            </p>
-          </div>
-        </Container>
-        <Container newClasses='py-12'>
-          <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
-            <Image
-              alt='Ponto de acesso'
-              height={103}
-              quality={100}
-              src='/service-wifi.svg'
-              width={103}
-            />  
-          </div>
-          <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
-            <p className='text-3xl text-white w-full'>
-              Ponto de acesso a serviço de internet básico.
-            </p>
-          </div>
-        </Container>
-        <Container newClasses='py-12'>
-          <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
-            <Image
-              alt='Despesas acessórias'
-              height={92}
-              quality={100}
-              src='/service-taxes.svg'
-              width={92}
-            />  
-          </div>
-          <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
-            <p className='text-3xl text-white w-full'>
-              Despesas acessórias do espaço privativo, tais como: IPTU, energia elétrica e água/esgoto.
-            </p>
-          </div>
-        </Container>
-        <Container newClasses='py-12'>
-          <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
-            <Image
-              alt='Serviço de conservação'
-              height={92}
-              quality={100}
-              src='/service-cleanup.svg'
-              width={92}
-            />  
-          </div>
-          <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
-            <p className='text-3xl text-white w-full'>
-              Serviço de conservação e limpeza das áreas comuns.
-            </p>
-          </div>
-        </Container>
-        <Container newClasses='pt-12 pb-96'>
-          <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
-            <Image
-              alt='Serviço de portaria'
-              height={92}
-              quality={100}
-              src='/service-parking.svg'
-              width={92}
-            />  
-          </div>
-          <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
-            <p className='text-3xl text-white w-full'>
-              Estacionamento privativo.
-            </p>
-          </div>
-        </Container>
-      </ContainerWithBackgroundImage>
+      <div id='servicos'>
+        <ContainerWithBackgroundImage uri='/bg-section-6.png'>
+          <Container newClasses='pt-24 pb-44'>
+            <h1 className='lg:col-span-3 col-span-4 lg:col-start-5 font-bold text-5xl text-white lg:text-left text-center uppercase'>Nossos</h1>
+            <h1 className='lg:col-span-3 col-span-4 lg:col-start-6 font-bold text-5xl text-gold lg:text-left text-center uppercase'>Serviços</h1>
+          </Container>
+          <Container newClasses='py-12'>
+            <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
+              <Image
+                alt='Serviço de portaria'
+                height={103}
+                quality={100}
+                src='/service-reception.svg'
+                width={103}
+              />  
+            </div>
+            <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
+              <p className='text-3xl text-white w-full'>
+                Serviço de portaria e recepção com controle de acesso às áreas comuns.
+              </p>
+            </div>
+          </Container>
+          <Container newClasses='py-12'>
+            <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
+              <Image
+                alt='Ponto de acesso'
+                height={103}
+                quality={100}
+                src='/service-wifi.svg'
+                width={103}
+              />  
+            </div>
+            <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
+              <p className='text-3xl text-white w-full'>
+                Ponto de acesso a serviço de internet básico.
+              </p>
+            </div>
+          </Container>
+          <Container newClasses='py-12'>
+            <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
+              <Image
+                alt='Despesas acessórias'
+                height={92}
+                quality={100}
+                src='/service-taxes.svg'
+                width={92}
+              />  
+            </div>
+            <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
+              <p className='text-3xl text-white w-full'>
+                Despesas acessórias do espaço privativo, tais como: IPTU, energia elétrica e água/esgoto.
+              </p>
+            </div>
+          </Container>
+          <Container newClasses='py-12'>
+            <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
+              <Image
+                alt='Serviço de conservação'
+                height={92}
+                quality={100}
+                src='/service-cleanup.svg'
+                width={92}
+              />  
+            </div>
+            <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
+              <p className='text-3xl text-white w-full'>
+                Serviço de conservação e limpeza das áreas comuns.
+              </p>
+            </div>
+          </Container>
+          <Container newClasses='pt-12 pb-96'>
+            <div className='lg:col-span-1 col-span-4 lg:col-start-3 flex lg:flex-row flex-col items-center'>
+              <Image
+                alt='Serviço de portaria'
+                height={92}
+                quality={100}
+                src='/service-parking.svg'
+                width={92}
+              />  
+            </div>
+            <div className='lg:col-span-6 col-span-4 flex items-center lg:text-left text-center'>
+              <p className='text-3xl text-white w-full'>
+                Estacionamento privativo.
+              </p>
+            </div>
+          </Container>
+        </ContainerWithBackgroundImage>
+      </div>
       <ContainerWithBackgroundImage uri='/bg-section-7.png'>
         <Container newClasses='py-20'>
           <h1 className='col-span-4 lg:col-start-4 font-bold text-5xl text-white lg:text-left text-center uppercase'>Depoimento de</h1>
@@ -305,124 +305,126 @@ export default function Home() {
           </div>
         </Container>
       </ContainerWithBackgroundImage>
-      <ContainerWithBackgroundImage uri='/bg-section-8.png'>
-        <Container newClasses='py-20'>
-          <h1 className='lg:col-span-6 col-span-4 lg:col-start-3 font-bold text-5xl lg:text-left text-center uppercase'>Vamos criar negócios,</h1>
-          <h1 className='lg:col-span-7 col-span-4 lg:col-start-5 font-bold text-5xl text-soft-gray lg:text-left text-center uppercase'>conexões e experiências?</h1>
-        </Container>
-        <Container>
-          <div className='lg:col-span-8 col-span-4 lg:col-start-3'>
-            <Formik
-              initialValues={{
-                nome: '',
-                telefone: '',
-                email: '',
-                mensagem: ''
-              }}
-              validationSchema={Yup.object({
-                nome: Yup.string().required('Campo obrigatório'),
-                email: Yup.string().email('E-mail inválido').required('Campo obrigatório'),
-                telefone: Yup.string().required('Campo obrigatório'),
-                mensagem: Yup.string().required('Campo obrigatório')
-              })}
-              onSubmit={async values => {
-                setFormLoader(true);
-                fetch('/api/mail', {
-                  method: 'POST',
-                  body: JSON.stringify(values)
-                }).then(res => {
-                  res.status === 200 ? setSuccessMessage(true) : setFailMessage(true);
-                  setFormLoader(false);
-                })
-              }}
-            >
-              {({ errors, values }) => (
-                <Form>
-                  <ul className='flex mb-12'>
-                    <li className='w-full'>
-                      {errors.nome && <p className='mt-2 text-soft-gray'>{errors.nome}</p>}
-                      <Field
-                        className={`${errors.nome ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray px-8 py-6 text-xl text-dark-blue w-full`}
-                        name='nome'
-                        placeholder='NOME COMPLETO:'
-                        type='text'
-                        value={values.nome}
-                      />
-                    </li>
-                  </ul>
-                  <ul className='flex flex-col lg:flex-row mb-12'>
-                    <li className='lg:mr-6 lg:w-1/2 w-full mb-12 lg:mb-0'>
-                      {errors.telefone && <p className='mt-2 text-soft-gray'>{errors.telefone}</p>}
-                      <Field 
-                        className={`${errors.telefone ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray px-8 py-6 text-xl text-dark-blue w-full`} 
-                        name='telefone' 
-                        placeholder='TELEFONE PARA CONTATO:' 
-                        type='text' 
-                        value={maskPhoneNumber(values.telefone)} 
-                      />
-                    </li>
-                    <li className='lg:ml-6 lg:w-1/2 w-full'>
-                      {errors.email && <p className='mt-2 text-soft-gray'>{errors.email}</p>}
-                      <Field 
-                        className={`${errors.email ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray px-8 py-6 text-xl text-dark-blue w-full`} 
-                        name='email' 
-                        placeholder='E-MAIL:' 
-                        type='email' 
-                        value={values.email} 
-                      />
-                    </li>
-                  </ul>
-                  <ul className='flex mb-12'>
-                    <li className='w-full'>
-                      {errors.mensagem && <p className='mt-2 text-soft-gray'>{errors.mensagem}</p>}
-                      <Field 
-                        as='textarea' 
-                        className={`${errors.mensagem ? 'bg-baby-gray' : 'bg-white'} font-medium h-56 placeholder:text-soft-gray px-8 py-6 text-xl text-dark-blue w-full`} 
-                        name='mensagem' 
-                        placeholder='MENSAGEM:' 
-                        value={values.mensagem} 
-                      />
-                    </li>
-                  </ul>
-                  {successMessage &&
-                    <ul className='flex pb-8'>
-                      <li>
-                        <p>Mensagem enviada com sucesso!</p>
+      <div id='contato'>
+        <ContainerWithBackgroundImage uri='/bg-section-8.png'>
+          <Container newClasses='py-20'>
+            <h1 className='lg:col-span-6 col-span-4 lg:col-start-3 font-bold text-5xl lg:text-left text-center uppercase'>Vamos criar negócios,</h1>
+            <h1 className='lg:col-span-7 col-span-4 lg:col-start-5 font-bold text-5xl text-soft-gray lg:text-left text-center uppercase'>conexões e experiências?</h1>
+          </Container>
+          <Container>
+            <div className='lg:col-span-8 col-span-4 lg:col-start-3'>
+              <Formik
+                initialValues={{
+                  nome: '',
+                  telefone: '',
+                  email: '',
+                  mensagem: ''
+                }}
+                validationSchema={Yup.object({
+                  nome: Yup.string().required('Campo obrigatório'),
+                  email: Yup.string().email('E-mail inválido').required('Campo obrigatório'),
+                  telefone: Yup.string().required('Campo obrigatório'),
+                  mensagem: Yup.string().required('Campo obrigatório')
+                })}
+                onSubmit={async values => {
+                  setFormLoader(true);
+                  fetch('/api/mail', {
+                    method: 'POST',
+                    body: JSON.stringify(values)
+                  }).then(res => {
+                    res.status === 200 ? setSuccessMessage(true) : setFailMessage(true);
+                    setFormLoader(false);
+                  })
+                }}
+              >
+                {({ errors, values }) => (
+                  <Form>
+                    <ul className='flex mb-12'>
+                      <li className='w-full'>
+                        {errors.nome && <p className='mt-2 text-soft-gray'>{errors.nome}</p>}
+                        <Field
+                          className={`${errors.nome ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray px-8 py-6 text-xl text-dark-blue w-full`}
+                          name='nome'
+                          placeholder='NOME COMPLETO:'
+                          type='text'
+                          value={values.nome}
+                        />
                       </li>
                     </ul>
-                  }
-                  {failMessage &&
-                    <ul className='flex pb-8'>
-                      <li>
-                        <p>Houve um erro em sua tentativa, tente novamente mais tarde!</p>
+                    <ul className='flex flex-col lg:flex-row mb-12'>
+                      <li className='lg:mr-6 lg:w-1/2 w-full mb-12 lg:mb-0'>
+                        {errors.telefone && <p className='mt-2 text-soft-gray'>{errors.telefone}</p>}
+                        <Field 
+                          className={`${errors.telefone ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray px-8 py-6 text-xl text-dark-blue w-full`} 
+                          name='telefone' 
+                          placeholder='TELEFONE PARA CONTATO:' 
+                          type='text' 
+                          value={maskPhoneNumber(values.telefone)} 
+                        />
+                      </li>
+                      <li className='lg:ml-6 lg:w-1/2 w-full'>
+                        {errors.email && <p className='mt-2 text-soft-gray'>{errors.email}</p>}
+                        <Field 
+                          className={`${errors.email ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray px-8 py-6 text-xl text-dark-blue w-full`} 
+                          name='email' 
+                          placeholder='E-MAIL:' 
+                          type='email' 
+                          value={values.email} 
+                        />
                       </li>
                     </ul>
-                  }
-                  <ul className='flex pb-20'>
-                    <li className='flex justify-center w-full'>
-                      <button 
-                        className='cursor-pointer bg-gold py-6 flex justify-center items-center rounded-md text-lg text-white uppercase lg:w-2/6 w-3/4'
-                        type='submit'
-                      >
-                        {formLoader &&
-                          <Image
-                            alt='Carregando'
-                            height={50}
-                            quality={100}
-                            src='/loader.svg'
-                            width={50}
-                          />
-                        }
-                        <span>Enviar</span>
-                      </button>
-                    </li>
-                  </ul>
-                </Form>
-              )}
-            </Formik>
-          </div>
-        </Container>
-      </ContainerWithBackgroundImage>
+                    <ul className='flex mb-12'>
+                      <li className='w-full'>
+                        {errors.mensagem && <p className='mt-2 text-soft-gray'>{errors.mensagem}</p>}
+                        <Field 
+                          as='textarea' 
+                          className={`${errors.mensagem ? 'bg-baby-gray' : 'bg-white'} font-medium h-56 placeholder:text-soft-gray px-8 py-6 text-xl text-dark-blue w-full`} 
+                          name='mensagem' 
+                          placeholder='MENSAGEM:' 
+                          value={values.mensagem} 
+                        />
+                      </li>
+                    </ul>
+                    {successMessage &&
+                      <ul className='flex pb-8'>
+                        <li>
+                          <p>Mensagem enviada com sucesso!</p>
+                        </li>
+                      </ul>
+                    }
+                    {failMessage &&
+                      <ul className='flex pb-8'>
+                        <li>
+                          <p>Houve um erro em sua tentativa, tente novamente mais tarde!</p>
+                        </li>
+                      </ul>
+                    }
+                    <ul className='flex pb-20'>
+                      <li className='flex justify-center w-full'>
+                        <button 
+                          className='cursor-pointer bg-gold py-6 flex justify-center items-center rounded-md text-lg text-white uppercase lg:w-2/6 w-3/4'
+                          type='submit'
+                        >
+                          {formLoader &&
+                            <Image
+                              alt='Carregando'
+                              height={50}
+                              quality={100}
+                              src='/loader.svg'
+                              width={50}
+                            />
+                          }
+                          <span>Enviar</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </Form>
+                )}
+              </Formik>
+            </div>
+          </Container>
+        </ContainerWithBackgroundImage>
+      </div>
       <Footer />
     </>
   )

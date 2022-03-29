@@ -3,25 +3,27 @@ import Link from 'next/link';
 import { Container } from '../Guide';
 
 export default function Footer() {
+  const scrollTo = element => {
+    document.getElementById(element).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+  };
+
   return (
     <>
       <div className='py-48'>
         <Container>
           <ul className='lg:col-span-10 col-span-4 lg:col-start-2 flex lg:flex-row flex-col items-center justify-between border-b pb-8'>
-            <li className='lg:mb-0 mb-4'>
-              <Link href='/'>
-                <a className='font-bold' title='Quem Somos'>Quem Somos</a>
-              </Link>
+            <li className='lg:mb-0 mb-4' onClick={() => scrollTo('quemsomos')}>
+              <a className='font-bold' href='#this' title='Quem Somos'>Quem Somos</a>
             </li>
-            <li className='lg:mb-0 mb-4'>
-              <Link href='/'>
-                <a className='font-bold' title='Serviços'>Serviços</a>
-              </Link>
+            <li className='lg:mb-0 mb-4' onClick={() => scrollTo('servicos')}>
+              <a className='font-bold' href='#this' title='Serviços'>Serviços</a>
             </li>
-            <li className='lg:mb-0 mb-4'>
-              <Link href='/'>
-                <a className='font-bold' title='Contato'>Contato</a>
-              </Link>
+            <li className='lg:mb-0 mb-4' onClick={() => scrollTo('contato')}>
+              <a className='font-bold' href='#this' title='Contato'>Contato</a>
             </li>
             <li className='lg:mb-0 mb-4'>
               <Link href='/'>
@@ -63,7 +65,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href='https://api.whatsapp.com/send?phone=5561982040066' target='_blank' rel='noreferrer' title='WhatsApp'>
+                <a href='https://api.whatsapp.com/send?phone=5561995526025' target='_blank' rel='noreferrer' title='WhatsApp'>
                   <Image
                     alt='WhatsApp'
                     height={38}
