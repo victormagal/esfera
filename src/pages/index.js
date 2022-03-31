@@ -43,9 +43,9 @@ export default function Home() {
           </Container>
         </ContainerWithBackgroundImage>
       </div>
-      <div className='flex overflow-x-scroll py-32 hide-scroll-bar'>
-        <div className='flex flex-nowrap lg:ml-40 md:ml-20 ml-10 '>
-          <div className='inline-block min-h-96 px-3 w-80'>
+      <div className='flex hide-scroll-bar overflow-x-scroll py-32'>
+        <div className='flex flex-nowrap space-x-6 lg:mx-40 md:mx-20 mx-4'>
+          <div className='inline-block min-h-96 w-80'>
             <div className='border border-gold h-full inline-block px-12 py-6 rounded-lg'>
               <div className='flex justify-center w-full'>
                 <Image
@@ -63,7 +63,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className='inline-block min-h-96 px-3 w-80'>
+          <div className='inline-block min-h-96 w-80'>
             <div className='border border-gold h-full inline-block px-12 py-6 rounded-lg'>
               <div className='flex justify-center w-full'>
                 <Image
@@ -81,7 +81,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className='inline-block min-h-96 px-3 w-80'>
+          <div className='inline-block min-h-96 w-80'>
             <div className='border border-gold h-full inline-block px-12 py-6 rounded-lg'>
               <div className='flex justify-center w-full'>
                 <Image
@@ -99,7 +99,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className='inline-block min-h-96 px-3 w-80'>
+          <div className='inline-block min-h-96 w-80'>
             <div className='border border-gold h-full inline-block px-12 py-6 rounded-lg'>
               <div className='flex justify-center w-full'>
                 <Image
