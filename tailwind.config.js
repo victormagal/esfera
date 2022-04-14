@@ -9,13 +9,16 @@ module.exports = {
     colors: {
       'dark-blue': '#00293D',
       'baby-blue': '#CFEBFF',
+      'dark-gray': '#333333',
       'gray': '#343434',
       'soft-gray': '#898383',
       'baby-gray': '#C7C5B6',
       'gold': '#B8924D',
       'white': 'white',
       'red': 'red',
-      'baby-red': '#F7A8A8'
+      'baby-red': '#F7A8A8',
+      'soft-brown': '#EFDFBF',
+      'almost-black': '#272727'
     },
     extend: {
       fontFamily: {
