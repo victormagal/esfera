@@ -22,7 +22,7 @@ export default function Header() {
       </Head>
       <div className='lg:py-4'>
         <Container>
-          <div className='lg:col-span-2 col-span-3 flex items-center'>
+          <div className='lg:col-span-3 col-span-3 flex items-center'>
             <Image
               alt='Esfera - Arena e Negócios'
               height={43}
@@ -67,22 +67,22 @@ export default function Header() {
           }
           <ul className='lg:col-span-4 lg:flex hidden items-center justify-between'>
             <li onClick={() => scrollTo('quemsomos')}>
-              <a className='text-gray' href='#this' title='Quem Somos'>Quem Somos</a>
+              <a className='font-light text-gray' href='#this' title='Quem Somos'>Quem Somos</a>
             </li>
             <li onClick={() => scrollTo('servicos')}>
-              <a className='text-gray' href='#this' title='Serviços'>Serviços</a>
+              <a className='font-light text-gray' href='#this' title='Serviços'>Serviços</a>
             </li>
             <li onClick={() => scrollTo('contato')}>
-              <a className='text-gray' href='#this' title='Contato'>Contato</a>
+              <a className='font-light text-gray' href='#this' title='Contato'>Contato</a>
             </li>
           </ul>
-          <ul className='lg:col-span-3 lg:col-end-13 lg:flex hidden items-center justify-between'>
+          <ul className='lg:col-span-2 lg:col-end-13 lg:flex hidden items-center justify-between'>
             <li>
-              <a className='text-gray' href='https://docs.google.com/document/d/1b3F29LEdROC-EkqcWVzmnNry0gdsyyZ62Z2OzW5MFvI/edit' rel='noreferrer'  target='_blank' title='Área do Cliente'>Área do Cliente</a>
+              <a className='font-light text-gray' href='https://docs.google.com/document/d/1b3F29LEdROC-EkqcWVzmnNry0gdsyyZ62Z2OzW5MFvI/edit' rel='noreferrer'  target='_blank' title='Área do Cliente'>Área do Cliente</a>
             </li>
             <li>
               <Link href='/'>
-                <a className='text-gray' title='Registrar'>Registrar</a>
+                <a className='font-light text-gray' title='Registrar'>Registrar</a>
               </Link>
             </li>
           </ul>
