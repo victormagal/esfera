@@ -449,12 +449,12 @@ export default function Home() {
                       </li>
                     </ul>
                     <ul className='flex flex-col lg:flex-row mb-4'>
-                      <li className='lg:mr-6 lg:w-1/2 w-full mb-12 lg:mb-0'>
+                      <li className='lg:mr-6 lg:w-1/2 w-full mb-4 lg:mb-0'>
                         {errors.telefone && <p className='text-soft-gray text-xs'>{errors.telefone}</p>}
                         <Field 
                           className={`${errors.telefone ? 'bg-baby-gray' : 'bg-white'} font-medium placeholder:text-soft-gray px-6 py-4 text-xs text-dark-blue w-full`} 
                           name='telefone' 
-                          placeholder='TELEFONE PARA CONTATO:' 
+                          placeholder='TELEFONE:' 
                           type='text' 
                           value={maskPhoneNumber(values.telefone)} 
                         />
