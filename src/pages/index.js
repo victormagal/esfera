@@ -44,73 +44,121 @@ export default function Home() {
         </ContainerWithBackgroundImage>
       </div>
       <ContainerWithBackgroundImage uri='/bg-section-3.png'>
-        <div className='flex hide-scroll-bar overflow-x-scroll py-32'>
-          <div className='flex flex-nowrap space-x-6 lg:mx-40 md:mx-20 mx-4'>
-            <div className='inline-block min-h-96 w-80'>
-              <div className='h-full inline-block p-6 rounded-lg'>
-                <div className='flex justify-center w-full'>
-                  <Image
-                    alt='Solaris - Comunicação Multimídia'
-                    height={203}
-                    quality={100}
-                    src='/comment_1.png'
-                    width={203}
-                  />
-                </div>
-                <p className='font-light mt-8 text-white'>
-                  <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
-                </p>
-              </div>
+        <div className='container hidden lg:grid lg:grid-cols-12 lg:gap-4 lg:mx-auto lg:py-32'>
+          <div className='lg:col-span-2 lg:col-start-3 p-6 rounded-lg'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Solaris - Comunicação Multimídia'
+                height={203}
+                quality={100}
+                src='/comment_1.png'
+                width={203}
+              />
             </div>
-            <div className='inline-block min-h-96 w-80'>
-              <div className='h-full inline-block p-6 rounded-lg'>
-                <div className='flex justify-center w-full'>
-                  <Image
-                    alt='Solaris - Comunicação Multimídia'
-                    height={203}
-                    quality={100}
-                    src='/comment_2.png'
-                    width={203}
-                  />
-                </div>
-                <p className='font-light mt-8 text-white'>
-                  O <span className='font-semibold'>Estádio Nacional Mané Garrincha</span> é um dos maiores ícones da arquitetura brasileira e por si só, um cartão postal a céu aberto. Aqui, você viverá suas maiores e mais importantes experiências de trabalho e de relacionamento...
-                </p>
-              </div>
+            <p className='font-light mt-8 text-white w-52'>
+              <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
+            </p>
+          </div>
+          <div className='lg:col-span-2 p-6 rounded-lg'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Solaris - Comunicação Multimídia'
+                height={203}
+                quality={100}
+                src='/comment_2.png'
+                width={203}
+              />
             </div>
-            <div className='inline-block min-h-96 w-80'>
-              <div className='h-full inline-block p-6 rounded-lg'>
-                <div className='flex justify-center w-full'>
-                  <Image
-                    alt='Solaris - Comunicação Multimídia'
-                    height={203}
-                    quality={100}
-                    src='/comment_3.png'
-                    width={203}
-                  />
-                </div>
-                <p className='font-light mt-8 text-white'>
-                  <span className='font-semibold'>Além disso, você pode assistir a grandes shows e eventos esportivos do seu escritório com uma vista única para arena e com total privacidade.</span>
-                </p>
-              </div>
+            <p className='font-light mt-8 text-white w-52'>
+              O <span className='font-semibold'>Estádio Nacional Mané Garrincha</span> é um dos maiores ícones da arquitetura brasileira e por si só, um cartão postal a céu aberto. Aqui, você viverá suas maiores e mais importantes experiências de trabalho e de relacionamento...
+            </p>
+          </div>
+          <div className='lg:col-span-2 p-6 rounded-lg'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Solaris - Comunicação Multimídia'
+                height={203}
+                quality={100}
+                src='/comment_3.png'
+                width={203}
+              />
             </div>
-            <div className='inline-block min-h-96 w-80'>
-              <div className='h-full inline-block p-6 rounded-lg'>
-                <div className='flex justify-center w-full'>
-                  <Image
-                    alt='Solaris - Comunicação Multimídia'
-                    height={203}
-                    quality={100}
-                    src='/comment_4.png'
-                    width={203}
-                  />
-                </div>
-                <p className='font-light mt-8 text-white'>
-                  Iremos te ajudar a realizar todas essas possibilidades com o <span className='font-semibold'>profissionalismo, capacidade de realização</span> e gestão que a sua empresa precisa.
-                </p>
-              </div>
+            <p className='font-light mt-8 text-white w-52'>
+              <span className='font-semibold'>Além disso, você pode assistir a grandes shows e eventos esportivos do seu escritório com uma vista única para arena e com total privacidade.</span>
+            </p>
+          </div>
+          <div className='lg:col-span-2 p-6 rounded-lg'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Solaris - Comunicação Multimídia'
+                height={203}
+                quality={100}
+                src='/comment_4.png'
+                width={203}
+              />
             </div>
-          </div>                    
+            <p className='font-light mt-8 text-white w-52'>
+              Iremos te ajudar a realizar todas essas possibilidades com o <span className='font-semibold'>profissionalismo, capacidade de realização</span> e gestão que a sua empresa precisa.
+            </p>
+          </div>
+        </div>
+        <div className='flex lg:hidden hide-scroll-bar overflow-x-auto gap-6 snap-mandatory snap-x p-20'>
+          <div className='p-6 rounded-lg'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Solaris - Comunicação Multimídia'
+                height={203}
+                quality={100}
+                src='/comment_1.png'
+                width={203}
+              />
+            </div>
+            <p className='font-light mt-8 text-white w-52'>
+              <span className='font-semibold'>Imagine ter o seu escritório privativo na localização mais privilegiada da cidade</span> seja por todas as possíveis vias de acesso, por estar no coração da cidade, ou por estar ao lado do setor hoteleiro, principais monumentos e restaurantes?
+            </p>
+          </div>
+          <div className='p-6 rounded-lg'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Solaris - Comunicação Multimídia'
+                height={203}
+                quality={100}
+                src='/comment_2.png'
+                width={203}
+              />
+            </div>
+            <p className='font-light mt-8 text-white w-52'>
+              O <span className='font-semibold'>Estádio Nacional Mané Garrincha</span> é um dos maiores ícones da arquitetura brasileira e por si só, um cartão postal a céu aberto. Aqui, você viverá suas maiores e mais importantes experiências de trabalho e de relacionamento...
+            </p>
+          </div>
+          <div className='p-6 rounded-lg'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Solaris - Comunicação Multimídia'
+                height={203}
+                quality={100}
+                src='/comment_3.png'
+                width={203}
+              />
+            </div>
+            <p className='font-light mt-8 text-white w-52'>
+              <span className='font-semibold'>Além disso, você pode assistir a grandes shows e eventos esportivos do seu escritório com uma vista única para arena e com total privacidade.</span>
+            </p>
+          </div>
+          <div className='p-6 rounded-lg'>
+            <div className='flex justify-center w-full'>
+              <Image
+                alt='Solaris - Comunicação Multimídia'
+                height={203}
+                quality={100}
+                src='/comment_4.png'
+                width={203}
+              />
+            </div>
+            <p className='font-light mt-8 text-white w-52'>
+              Iremos te ajudar a realizar todas essas possibilidades com o <span className='font-semibold'>profissionalismo, capacidade de realização</span> e gestão que a sua empresa precisa.
+            </p>
+          </div>                   
         </div>
       </ContainerWithBackgroundImage>
       <ContainerWithBackgroundImage uri='/bg-section-4.jpg'>
