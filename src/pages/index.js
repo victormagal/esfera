@@ -229,7 +229,69 @@ export default function Home() {
           <Container newClasses='py-20'>
             <h1 className='col-span-4 lg:col-start-5 font-light text-3xl text-center text-white uppercase'><span className='font-bold'>Depoimentos</span> de clientes ativos</h1>
           </Container>
-          <Container newClasses='pb-20'>
+          <div className='flex lg:hidden gap-6 hide-scroll-bar overflow-x-auto pb-20 px-20 snap-mandatory snap-x'>
+            <div className='flex flex-col items-start p-4 rounded space-y-4'>
+              <div className='flex justify-center w-full'>
+                <Image
+                  alt='Solaris - Comunicação Multimídia'
+                  height={135}
+                  quality={100}
+                  src='/solaris.png'
+                  width={135}
+                />
+              </div>
+              <p className='font-light text-white w-60'>
+                O ambiente do Esfera nos proporciona um <span className='font-semibold'>atendimento único com experiências e possibilidades de negócios</span> que não encontramos em outros centros empresariais de Brasília.
+              </p>
+              <p className='font-semibold text-white'>Solaris</p>
+            </div>
+            <div className='flex flex-col items-start p-4 rounded space-y-4'>
+              <div className='flex items justify-center w-full'>
+                <Image
+                  alt='Lotus'
+                  height={135}
+                  quality={100}
+                  src='/lotus.png'
+                  width={135}
+                />
+              </div>
+              <p className='font-light text-white w-56'>
+                A Esfera passa uma <span className='font-semibold'>experiência incrível aos nossos funcionários e clientes</span>, além de oferecer um atendimento especializado, rápido e muito profissional.
+              </p>
+              <p className='font-semibold text-white'>Lotus</p>
+            </div>
+            <div className='flex flex-col items-start p-4 rounded space-y-4'>
+              <div className='flex justify-center w-full'>
+                <Image
+                  alt='B2'
+                  height={135}
+                  quality={100}
+                  src='/b2.png'
+                  width={135}
+                />
+              </div>
+              <p className='font-light text-white w-56'>
+                O <span className='font-semibold'>networking e a estrutura</span> foram os principais motivos que nos fizeram trazer o escritório para a Esfera. Todo o projeto apresentado comprova que é um ambiente para negócios muito excepcional!
+              </p>
+              <p className='font-semibold text-white'>B2</p>
+            </div>
+            <div className='flex flex-col items-start p-4 rounded space-y-4'>
+              <div className='flex justify-center w-full'>
+                <Image
+                  alt='HLA'
+                  height={135}
+                  quality={100}
+                  src='/hla.png'
+                  width={135}
+                />
+              </div>
+              <p className='font-light text-white w-56'>
+                Além do <span className='font-semibold'>atendimento extremamente eficiente que recebemos desde o início,</span> o networking garantido pela Esfera foi um dos benefícios que mais nos chamou a atenção.
+              </p>
+              <p className='font-semibold text-white'>HLA</p>
+            </div>
+          </div>
+          <div className='container hidden lg:grid lg:grid-cols-12 lg:gap-4 lg:mx-auto lg:pb-20 lg:px-4'>
             <div className='lg:col-span-2 lg:col-start-3 col-span-4 flex flex-col items-start p-4 rounded space-y-4 text-xs'>
               <div className='flex justify-center w-full'>
                 <Image
@@ -290,7 +352,7 @@ export default function Home() {
               </p>
               <p className='font-semibold text-white'>HLA</p>
             </div>
-          </Container>
+          </div>
         </ContainerWithBackgroundImage>
       </div>
       <div id='contato'>
