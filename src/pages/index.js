@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className='w-full'>
-        <iframe className='h-video w-full' src='https://www.youtube.com/embed/eGkSItKt-NM?controls=0' title='YouTube video player' frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
+      <div className='flex justify-center py-6 md:py-0 md:w-full'>
+        <iframe className='md:h-video w-11/12 md:w-full' src='https://www.youtube.com/embed/eGkSItKt-NM?controls=0' title='YouTube video player' frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
       </div>
       <div id='quemsomos'>
         <ContainerWithBackgroundImage uri='/bg-section-2.png'>
@@ -161,23 +161,23 @@ export default function Home() {
           </div>                   
         </div>
       </ContainerWithBackgroundImage>
-      <ContainerWithBackgroundImage uri='/bg-section-4.jpg'>
+      <ContainerWithBackgroundImage uri='/bg-section-4.jpg' urimobile='/bg-section-4-mobile.jpg'>
         <Container>
-          <div className='lg:col-span-5 lg:col-start-3 col-span-4 pb-40 pt-64'>
-            <p className='text-lg text-white lg:text-left text-center mt-24'>
+          <div className='lg:col-span-5 lg:col-start-3 col-span-4 pb-96 md:pb-40 pt-8 md:pt-64'>
+            <p className='text-white text-left mb-40 md:mb-0 mt-0 md:mt-24 px-20 md:px-0'>
               Temos como vizinhança o <span className='font-semibold'>Mané Mercado Gastrônomico</span>, que atua com 17 operações culinárias ativas de domingo a domingo, com menus assinados por renomados chefs de cozinha da cidade.
             </p>
           </div>
         </Container>
       </ContainerWithBackgroundImage>
-      <ContainerWithBackgroundImage uri='/bg-section-5.png'>
+      <ContainerWithBackgroundImage uri='/bg-section-5.png' urimobile='/bg-section-5-mobile.png'>
         <Container>
-          <div className='lg:col-span-5 col-span-4 lg:col-end-12 py-64'>
+          <div className='lg:col-span-5 col-span-4 lg:col-end-12 pt-40 pb-80 md:py-64'>
             <h1 className='text-lg lg:text-right text-center text-white'>É nisso que acreditamos...</h1>
-            <p className='font-light mt-8 text-lg lg:text-right text-center text-white'>
+            <p className='font-light mt-8 text-lg lg:text-right text-center text-white px-12 md:px-0'>
               <span className='font-semibold'>Trabalhar sem sentir que está trabalhando</span> e, por consequência, <span className='font-semibold'>fechar os melhores negócios da sua vida.</span>
             </p>
-            <p className='font-light text-lg lg:text-right text-center text-white'>
+            <p className='font-light text-lg lg:text-right text-center text-white px-12 md:px-0'>
               Afinal de contas, toda grande decisão também envolve um pouco de emoção, <span className='font-semibold'>e se for pro seu cliente lembrar de você, que seja com as melhores emoções possíveis!</span>
             </p>
           </div>
