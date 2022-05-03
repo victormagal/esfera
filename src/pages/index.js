@@ -26,12 +26,12 @@ export default function Home() {
             <div className='lg:col-span-8 col-span-4 lg:col-start-3 flex lg:flex-row flex-col lg:justify-between items-center mt-8 lg:space-y-0 space-y-8'>
               <div className='bg-dark-gray flex h-52 items-center justify-center rounded-full w-52'>
                 <p className='text-xs text-center text-white px-8'>
-                  Nosso modelo de negócio, <span className='font-semibold'>além de entregar um escritório privativo nas áreas de camarote do Estádio Nacional...</span>  
+                  Nosso modelo de negócio <span className='font-semibold'>entrega escritórios privativos nas áreas de camarote do Estádio Nacional Mané Garrincha</span>
                 </p>  
               </div>
               <div className='bg-soft-brown flex h-52 items-center justify-center rounded-full w-52'>
                 <p className='text-xs text-center text-gray px-8'>
-                  E a experiência de administração e <span className='font-semibold'>gestão de ativos imobiliários</span> da TRK imóveis
+                  Sob a administração e a vasta experiência e <span className='font-semibold'>gestão de ativos imobiliários</span> da TRK Imóveis
                 </p>  
               </div>
               <div className='bg-white flex h-52 items-center justify-center rounded-full w-52'>
