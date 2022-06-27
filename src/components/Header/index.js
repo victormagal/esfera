@@ -78,7 +78,7 @@ export default function Header() {
           </ul>
           <ul className='lg:col-span-2 lg:col-end-13 lg:flex hidden items-center justify-between'>
             <li>
-              <a className='font-light text-gray' href='https://docs.google.com/document/d/1b3F29LEdROC-EkqcWVzmnNry0gdsyyZ62Z2OzW5MFvI/edit' rel='noreferrer'  target='_blank' title='Área do Cliente'>Área do Cliente</a>
+              <a className='font-light text-gray' href='https://esferabsb.conexa.app/index.php?r=cliente/logAreaCliente' rel='noreferrer'  target='_blank' title='Área do Cliente'>Área do Cliente</a>
             </li>
             <li>
               <Link href='/'>
